@@ -10,18 +10,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=K2D">
 </head>
 <body>
-    <nav class="nav-menu">
-        <div class="brand">
-            <img class="img-pomodoro-brand" src="assets/pomodoro.png" alt="pomodoro tomatoes">
-            <h2 class="title-pomodoro-brand">Pomodoro</h2>
-        </div>
-        <div class="menu">
-            <a href="#">Beneficios</a>
-            <a href="#">Como funciona</a>
-            <a href="#">Testimonios</a>
-            <button class="btn-use">USAR</button>
-        </div>
-    </nav>
+    <header>
+        <nav class="nav-menu">
+            <div class="brand">
+                <img class="img-pomodoro-brand" src="assets/pomodoro.png" alt="pomodoro tomatoes">
+                <h2 class="title-pomodoro-brand">Pomodoro</h2>
+            </div>
+            <div class="menu">
+                <div class="link">
+                    <a href="#">Beneficios</a>
+                    <a href="#">Como funciona</a>
+                    <a href="#">Testimonios</a>
+                    <button class="btn-use">USAR</button>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <div class="hamburger"></div>
+                </a>
+            </div>
+        </nav>
+    </header>
+   
     <section class="header">
         <h2 class="title-header">Pomodoro</h2>
         <h3 class="title-technique-section">La legendaria técnica</h2>
@@ -68,4 +76,14 @@
         </footer>
     </main>
 </body>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
 </html>
