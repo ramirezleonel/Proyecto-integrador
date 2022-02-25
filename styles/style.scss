@@ -3,18 +3,36 @@ $color-secundary-red: #CE5D5B;
 $btn-red: #EC5250;
 $color-white : #fff;
 $color-grey: #686868;
-  
+$color-blueDark: #34495E;  
+
+$fontsize-title-desktop: 72px;
+$fontsize-title-android: 36px;
+$fontsize-subtitle-desktop: 34px;
+$fontsize-subtitle-android: 24px;
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-size: 24px;
     font-family: 'K2D','serif';
-    letter-spacing: 0.1em;
+    font-style: normal;
     display: flex;
     flex-direction: column;
+    letter-spacing: 0.1rem;
+}
+.title{
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 94px;
+}
+.subtitle{
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 47px;
+}
+.icon{
+    display: none;
 }
 
 .header{
@@ -25,9 +43,8 @@ body{
         width: 100%;
         justify-content: space-between;
         color: $color-white;
-    
+      
         .brand {
-            align-items: center;
             padding: 30px;
             width: 400px;
             
@@ -38,22 +55,21 @@ body{
             }
             
             .title-pomodoro-brand{
+                font-weight: normal;
+                font-size: 36px;
+                line-height: 47px;
                 position: absolute;
                 display: inline;
                 color: $color-secundary-red;
-                font-size: 36px;
             }
         }
         .menu a, button{
-            font-weight: 600;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 31px;
             text-decoration: none;
             color: $color-grey;
-            font-size: 20px;
             margin-right: 2.5rem;
-        }
-        .menu{
-            overflow: hidden;
-            display: block;
         }
         
         .btn-use{
@@ -77,7 +93,7 @@ body{
     color: $color-white;
     background-color: $color-grey;
 
-    .title{
+    .title-section-1{
         position: absolute;
         float: left;
         left: 5%;
@@ -90,52 +106,72 @@ body{
         width: 268.07px;
         height: 275.41px;
     }
-    
 }
-.icon{
-    display: none;
-}
-
 
 .best-technique-section{
+    padding-left: 30px ;
+    padding-right: 30px ;
     background-color: $color-white;
-    height: 500px;
-    text-align: center;
+    height: auto;
+    justify-content: center;
     .title-best-technique{
         color: $color-primary-red;
+        
     }
 
     .btn-circle{
+      
       padding: 50px;
+      margin: 50px;
       height: 200px;
       width: 200px;
       border: 0;
       border-radius: 50%;
       background-color: $color-primary-red;
+      color: $color-white;
     }
 }
 
 .easy-section{
+    padding-left: 30px ;
+    padding-right: 30px ;
     height: 500px;
     background-color: $color-grey;
     text-align: center;
 }
 
 .testimonial{
+    padding-left: 30px ;
+    padding-right: 30px ;
     text-align: center;
     height: 500px;
 }
 
 .contact-us{
+    padding-left: 30px ;
+    padding-right: 30px ;
     height: 500px;
     text-align: center;
     background-color: $color-primary-red;
 }
 
 .footer-pomodoro{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-blueDark;
+    color: $color-white;
     height: 100px;
-    text-align: center;
-    display: block;
+ 
+ 
+    .subtitle-footer{
+
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 31px;
+    }
 }
 
 .hamburger{
@@ -147,6 +183,18 @@ body{
 
 
 @media only screen and (max-width: 721px) {
+    .title{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 47px;
+    }
+    .subtitle{
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 31px;
+        text-align: center;
+    }
+   
     .link{
         display: none;
     }
@@ -155,7 +203,13 @@ body{
       display: block;
     }
   
+   .main{
+    text-align: center;
+
+   } 
+
   .section-1{
+      padding: 30px 0px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -170,14 +224,39 @@ body{
         width: 187.07px;
         height: 189.11px;
       }
-      .title{
+      .title-section-1{
         left: auto;
         position: relative;
         width: 100%;
       }
      
   }
+
+  .best-technique-section{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+  }
+  .easy-section{
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+  }
+  .testimonial{
+    padding-top: 30px;
+    padding-bottom: 50px;
   
+  }
+  .contact-us{
+    padding-top: 30px;
+    padding-bottom: 50px;
+   
+  }
+  .footer-pomodoro{
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
 }
 
 

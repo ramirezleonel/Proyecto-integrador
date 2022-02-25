@@ -6,9 +6,8 @@
 }
 
 body {
-  font-size: 24px;
   font-family: 'K2D','serif';
-  letter-spacing: 0.1em;
+  font-style: normal;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,6 +15,23 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  letter-spacing: 0.1rem;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 94px;
+}
+
+.subtitle {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 47px;
+}
+
+.icon {
+  display: none;
 }
 
 .header .nav-menu {
@@ -37,9 +53,6 @@ body {
 }
 
 .header .nav-menu .brand {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 30px;
   width: 400px;
 }
@@ -51,23 +64,21 @@ body {
 }
 
 .header .nav-menu .brand .title-pomodoro-brand {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 47px;
   position: absolute;
   display: inline;
   color: #CE5D5B;
-  font-size: 36px;
 }
 
 .header .nav-menu .menu a, .header .nav-menu button {
-  font-weight: 600;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
   text-decoration: none;
   color: #686868;
-  font-size: 20px;
   margin-right: 2.5rem;
-}
-
-.header .nav-menu .menu {
-  overflow: hidden;
-  display: block;
 }
 
 .header .nav-menu .btn-use {
@@ -95,7 +106,7 @@ body {
   background-color: #686868;
 }
 
-.section-1 .title {
+.section-1 .title-section-1 {
   position: absolute;
   float: left;
   left: 5%;
@@ -109,14 +120,14 @@ body {
   height: 275.41px;
 }
 
-.icon {
-  display: none;
-}
-
 .best-technique-section {
+  padding-left: 30px;
+  padding-right: 30px;
   background-color: #fff;
-  height: 500px;
-  text-align: center;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .best-technique-section .title-best-technique {
@@ -125,34 +136,62 @@ body {
 
 .best-technique-section .btn-circle {
   padding: 50px;
+  margin: 50px;
   height: 200px;
   width: 200px;
   border: 0;
   border-radius: 50%;
   background-color: #FC4850;
+  color: #fff;
 }
 
 .easy-section {
+  padding-left: 30px;
+  padding-right: 30px;
   height: 500px;
   background-color: #686868;
   text-align: center;
 }
 
 .testimonial {
+  padding-left: 30px;
+  padding-right: 30px;
   text-align: center;
   height: 500px;
 }
 
 .contact-us {
+  padding-left: 30px;
+  padding-right: 30px;
   height: 500px;
   text-align: center;
   background-color: #FC4850;
 }
 
 .footer-pomodoro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #34495E;
+  color: #fff;
   height: 100px;
-  text-align: center;
-  display: block;
+}
+
+.footer-pomodoro .subtitle-footer {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
 }
 
 .hamburger {
@@ -163,13 +202,28 @@ body {
 }
 
 @media only screen and (max-width: 721px) {
+  .title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 47px;
+  }
+  .subtitle {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+  }
   .link {
     display: none;
   }
   .icon {
     display: block;
   }
+  .main {
+    text-align: center;
+  }
   .section-1 {
+    padding: 30px 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -193,10 +247,31 @@ body {
     width: 187.07px;
     height: 189.11px;
   }
-  .section-1 .title {
+  .section-1 .title-section-1 {
     left: auto;
     position: relative;
     width: 100%;
+  }
+  .best-technique-section {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .easy-section {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .testimonial {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .contact-us {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .footer-pomodoro {
+    padding-top: 30px;
+    padding-bottom: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

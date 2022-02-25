@@ -17,7 +17,7 @@
                 <h2 class="title-pomodoro-brand">Pomodoro</h2>
             </div>
             <div class="menu">
-                <div class="link">
+                <div class="link" id="link">
                     <a href="#">Beneficios</a>
                     <a href="#">Como funciona</a>
                     <a href="#">Testimonios</a>
@@ -32,31 +32,30 @@
     <main>
         <section class="section-1">
             <img class="img-pomodoro" src="assets/pomodoro.png" alt="pomodoro tomatoes">
-            <div class="title">
-                <h2 class="title-pomodoro">Pomodoro</h2>
-                <h3 class="subtitle-technique">La legendaria técnica de control del tiempo</h2>    
+            <div class="title-section-1">
+                <h2 class="title title-pomodoro">Pomodoro</h2>
+                <h3 class="subtitle subtitle-technique">La legendaria técnica de control del tiempo</h2>    
             </div>
-  
         </section>
         <section class="best-technique-section">
-            <h2 class="title-best-technique">La mejor técnica</h2>
-            <h2 class="subtitle-best-technique">Científicamente, la técnica
+            <h2 class="title title-best-technique">La mejor técnica</h2>
+            <h2 class="subtitle subtitle-best-technique">Científicamente, la técnica
                 pomodoro se puede aplicar
                 a virtualmente cualquier
                 actividad.</h2>
             <button class="btn-circle">
-                <h3>Mejor manejo del tiempo</h3>
+                <h3 class="subtitle">Mejor manejo del tiempo</h3>
             </button>
             <button class="btn-circle">
-                <h3>Más conocimiento sobre nuestros límites</h3>
+                <h3 class="subtitle">Más conocimiento sobre nuestros límites</h3>
             </button>
             <button class="btn-circle">
-                <h3>Mayor Bienestar</h3>
+                <h3 class="subtitle">Mayor Bienestar</h3>
             </button>
         </section>
         <section class="easy-section">
-            <h2>Es sencillo</h2>
-            <h3>Trabajá por 25 minutos,
+            <h2 class="title">Es sencillo</h2>
+            <h3 class="subtitle">Trabajá por 25 minutos,
                 Descansa 5
                 Repetí
                 
@@ -66,20 +65,20 @@
                 cientos de aplicaciones</h3>
         </section>
         <section class="testimonial">
-            <h2>Testimonios</h2> 
+            <h2 class="title">Testimonios</h2> 
         </section>
         <section class="contact-us">
-            <h2>¡Probalo vos hoy mismo!</h2>
+            <h2 class="title">¡Probalo vos hoy mismo!</h2>
         </section>
         <footer class="footer-pomodoro">
-            <h3>@Copyright 2022 By Leonel Matias Ramirez</h3>
-            <h3>Pomodoro SRL</h3>
+            <h3 class="subtitle-footer">@Copyright 2022 By Leonel Matias Ramirez</h3>
+            <h3 class="subtitle-footer">Pomodoro SRL</h3>
         </footer>
     </main>
 </body>
 <script>
 function myFunction() {
-  var x = document.getElementById("myTopnav");
+  var x = document.getElementById("link");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
