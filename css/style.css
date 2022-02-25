@@ -34,6 +34,25 @@ body {
   display: none;
 }
 
+.hamburger {
+  background-image: url(../assets/icono-menu.png);
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+}
+
+.btn {
+  border: 0;
+  border-radius: 30px;
+  padding: 12px;
+  margin: 10px;
+  background-color: #EC5250;
+  color: #fff;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+}
+
 .header .nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,7 +91,7 @@ body {
   color: #CE5D5B;
 }
 
-.header .nav-menu .menu a, .header .nav-menu button {
+.header .nav-menu .menu a {
   font-weight: normal;
   font-size: 24px;
   line-height: 31px;
@@ -82,15 +101,11 @@ body {
 }
 
 .header .nav-menu .btn-use {
-  border: 0;
-  border-radius: 30px;
   width: 200px;
-  padding: 12px;
-  background-color: #EC5250;
-  color: #fff;
 }
 
 .section-1 {
+  padding: 40px 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,24 +136,37 @@ body {
 }
 
 .best-technique-section {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 40px 80px;
   background-color: #fff;
   height: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .best-technique-section .title-best-technique {
+  margin-bottom: 20px;
   color: #FC4850;
 }
 
+.best-technique-section .container-btnCircle {
+  margin: 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.best-technique-section .subtitle-circle {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+}
+
 .best-technique-section .btn-circle {
-  padding: 50px;
-  margin: 50px;
-  height: 200px;
-  width: 200px;
+  width: 195px;
+  height: 195px;
+  padding: 10px 10px;
   border: 0;
   border-radius: 50%;
   background-color: #FC4850;
@@ -146,26 +174,118 @@ body {
 }
 
 .easy-section {
-  padding-left: 30px;
-  padding-right: 30px;
-  height: 500px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 80px;
+  height: 800px;
   background-color: #686868;
-  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.easy-section .title-easy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.easy-section .title-easy .subtitle {
+  margin-bottom: 50px;
+}
+
+.easy-section .title-easy .btn-easy {
+  width: 400px;
+  margin: 30px;
 }
 
 .testimonial {
-  padding-left: 30px;
-  padding-right: 30px;
-  text-align: center;
+  padding: 40px 80px;
   height: 500px;
 }
 
+.testimonial .title {
+  color: #FC4850;
+}
+
+.testimonial .container-testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.testimonial .container-testimonial .box-testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.testimonial .container-testimonial .box-testimonial .img-avatar {
+  width: 200px;
+  height: 200px;
+  border: 0;
+  border-radius: 50%;
+}
+
+.testimonial .container-testimonial .box-testimonial .text-testimonial {
+  margin: 20px;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.testimonial .container-testimonial .box-testimonial .text-testimonial .fullName {
+  color: #FC4850;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
 .contact-us {
-  padding-left: 30px;
-  padding-right: 30px;
-  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 80px;
+  height: 500px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
   background-color: #FC4850;
+}
+
+.contact-us .btn-contact-us {
+  margin: 40px 20px;
+  background-color: #fff;
+  color: #FC4850;
+  width: 400px;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 47px;
 }
 
 .footer-pomodoro {
@@ -192,13 +312,6 @@ body {
   font-weight: bold;
   font-size: 24px;
   line-height: 31px;
-}
-
-.hamburger {
-  background-image: url(../assets/icono-menu.png);
-  background-size: cover;
-  height: 20px;
-  width: 20px;
 }
 
 @media only screen and (max-width: 721px) {
@@ -257,21 +370,72 @@ body {
     padding-top: 30px;
     padding-bottom: 50px;
   }
+  .best-technique-section .container-btnCircle {
+    margin: 50px 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 50px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .best-technique-section .container-btnCircle .btn-circle {
+    margin: 15px;
+  }
   .easy-section {
+    width: 100%;
     padding-top: 30px;
     padding-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .easy-section .title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .easy-section .subtitle {
+    margin-bottom: 50px;
+  }
+  .easy-section .img-phone {
+    display: none;
+  }
+  .easy-section .title-easy .btn-easy {
+    margin: 20px 0px;
+    width: 100%;
   }
   .testimonial {
     padding-top: 30px;
     padding-bottom: 50px;
+    height: auto;
+  }
+  .testimonial .container-testimonial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .contact-us {
     padding-top: 30px;
     padding-bottom: 50px;
   }
   .footer-pomodoro {
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding: 80px;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
